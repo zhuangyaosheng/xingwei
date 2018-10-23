@@ -17,74 +17,72 @@ var ArrayIndexOf =function(arr,value){
 //配置域名和需要显示的板块  
 var config=[
   {
-    "host":"jingjingmall",
+    "host":"jingjingmall.cn",
     "logo":"星微科技",
     "gov":"粤ICP备18044292号",
-    "versions":1//版块  备注：1 星微 2 帆星 3 田蕾
+    "company": "广州星微网络科技有限公司",
+    "name": "星微",
+    "baidu": "9df49540020d98c5885ac7a92105929b"
   },
   {
-    "host":"fxscrm",
+    "host":"fxscrm.com",
     "logo":"帆星科技",
     "gov":"粤ICP备18114627号",
-    "versions":2//版块  备注：1 星微 2 帆星 3 田蕾
+    "company": "广州帆星科技有限公司",
+    "name": "帆星"
   },
   {
-    "host":"tianleiscrm",
+    "host":"tianleiscrm.com",
     "logo":"田蕾科技",
     "gov":"粤ICP备18116819号",
-    "versions":3//版块  备注：1 星微 2 帆星 3 田蕾
+    "company": "广州田蕾信息科技有限公司",
+    "name": "田蕾"
+  },
+  {
+    "host":"168feitao.com",  // 168非淘网
+    "gov":"粤ICP备18044292号-10"
+  },
+  {
+    "host":"wechatgj.com", // 微客淘网
+    "gov":"粤ICP备18044292号-12"
+  },
+  {
+    "host":"168duoshou.com", // 168舵手网
+    "gov":"粤ICP备18044292号-9"
+  },
+  {
+    "host":"huanghuangmall.cn", // 欢豆商城网
+    "gov":"粤ICP备18044292号-11"
   }
 ];
-var _versions1=function(){
-  //百度统计
-  var _hmt = _hmt || [];
-  (function() {
+
+//百度统计
+var statistics = function (key) {
+  (function () {
     var hm = document.createElement("script");
-    hm.src = "https://hm.baidu.com/hm.js?9df49540020d98c5885ac7a92105929b";
+    hm.src = "https://hm.baidu.com/hm.js?" + key;
     var s = document.getElementsByTagName("script")[0];
     s.parentNode.insertBefore(hm, s);
   })();
-  $("#tianLei,#sailStar").remove();
-};
-var _versions2=function(){
-  $("#microStar,#tianLei").remove();
-};
-var _versions3=function(){
-  $("#microStar,#sailStar").remove();
-};
+}
+
 for(var i=0;i<config.length;i++){
   if(window.location.host.indexOf(config[i].host) > -1){
-    switch(config[i].versions){
-      case 1:
-        if(!!config[i].logo){
-          $("#logo").html(config[i].logo);
-        };
-        if(!!config[i].gov){
-          $("#gov").html(config[i].gov);
-        };
-        _versions1();
-        break;
-      case 2:
-        if(!!config[i].logo){
-          $("#logo").html(config[i].logo);
-        };
-        if(!!config[i].gov){
-          $("#gov").html(config[i].gov);
-        };
-        _versions2();
-        break;
-      case 3:
-        if(!!config[i].logo){
-          $("#logo").html(config[i].logo);
-        };
-        if(!!config[i].gov){
-          $("#gov").html(config[i].gov);
-        };
-        _versions3();
-        break;
-      default:
-        break;
+    if(!!config[i].logo){
+      $("#logo").html(config[i].logo);
     };
+    if(!!config[i].gov){
+      $("#gov").html(config[i].gov);
+    };
+    if (!!config[i].company){
+      $("#company").html(config[i].company);
+    }
+    if (!!config[i].name){
+      $("#name").html(config[i].name);
+    }
+    if (!!config[i].baidu){
+      statistics(config[i].baidu);
+    }
   };
 };
 
