@@ -38,6 +38,8 @@ var config=[
     "company": "广州田蕾信息科技有限公司",
     "name": "田蕾"
   },
+
+  // 生产
   {
     "host":"168feitao.com",  // 168非淘网
     "gov":"粤ICP备18044292号-10"
@@ -52,6 +54,24 @@ var config=[
   },
   {
     "host":"huanghuangmall.cn", // 欢豆商城网
+    "gov":"粤ICP备18044292号-11"
+  },
+
+  //uat
+  {
+    "host":"ex-168feitao.uat.aiagain.com",  // 168非淘网
+    "gov":"粤ICP备18044292号-10"
+  },
+  {
+    "host":"ex-wechatgj.uat.aiagain.com", // 微客淘网
+    "gov":"粤ICP备18044292号-12"
+  },
+  {
+    "host":"ex-168duoshou.uat.aiagain.com", // 168舵手网
+    "gov":"粤ICP备18044292号-9"
+  },
+  {
+    "host":"ex-huanghuangmall.uat.aiagain.com", // 欢豆商城网
     "gov":"粤ICP备18044292号-11"
   }
 ];
