@@ -22,21 +22,24 @@ var config=[
     "gov":"粤ICP备18044292号",
     "company": "广州星微网络科技有限公司",
     "name": "星微",
-    "baidu": "9df49540020d98c5885ac7a92105929b"
+    "baidu": "9df49540020d98c5885ac7a92105929b",
+    "delClass": ".block--del"
   },
   {
     "host":"fxscrm.com",
     "logo":"帆星科技",
     "gov":"粤ICP备18114627号",
     "company": "广州帆星科技有限公司",
-    "name": "帆星"
+    "name": "帆星",
+    "delClass": ".block--del"
   },
   {
     "host":"tianleiscrm.com",
     "logo":"田蕾科技",
     "gov":"粤ICP备18116819号",
     "company": "广州田蕾信息科技有限公司",
-    "name": "田蕾"
+    "name": "田蕾",
+    "delClass": ".block--del"
   },
   {
     "host":"168feitao.com",  // 168非淘网
@@ -82,6 +85,9 @@ for(var i=0;i<config.length;i++){
     }
     if (!!config[i].baidu){
       statistics(config[i].baidu);
+    }
+    if (!!config[i].delClass){
+      $(config[i].delClass).remove();
     }
   };
 };
