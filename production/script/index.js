@@ -56,7 +56,35 @@ var config=[
   {
     "host":"huanghuangmall.cn", // 欢豆商城网
     "gov":"粤ICP备18044292号-11"
-  }
+  },
+  {
+    "logo":"田蕾科技", // 海朗网
+    "company": "广州田蕾信息科技有限公司",
+    "name": "田蕾",
+    "host":"hailangmall.cn",
+    "gov":"粤ICP备18116819号-3"
+  },
+  {
+    "logo":"田蕾科技", // 豆豆网
+    "company": "广州田蕾信息科技有限公司",
+    "name": "田蕾",
+    "host":"doudoumall.cn",
+    "gov":"粤ICP备18116819号-2"
+  },
+  {
+    "logo":"田蕾科技", // 友客网
+    "company": "广州田蕾信息科技有限公司",
+    "name": "田蕾",
+    "host":"youkemall.cn",
+    "gov":"粤ICP备18116819号-4"
+  },
+  {
+    "logo":"田蕾科技", // 嗨淘网
+    "company": "广州田蕾信息科技有限公司",
+    "name": "田蕾",
+    "host":"haitaimall.cn",
+    "gov":"粤ICP备18116819号-5"
+  },
 ];
 
 //百度统计
