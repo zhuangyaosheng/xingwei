@@ -1511,3 +1511,7 @@ a {
 .footer-layout .lable-title--top {
   padding-top: 15px;
 }
+
+.d-none {
+  display: none;
+}

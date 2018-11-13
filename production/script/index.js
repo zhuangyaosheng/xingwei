@@ -14,78 +14,90 @@ var ArrayIndexOf =function(arr,value){
 　　return -1;
 };
 
+/**
+ * @param {String} host -域名（必需）
+ * @param {String} gov -备案号（必需）
+ * @param {String} addClass -要添加的class（必需，xingwei、fanxing、tianlei）
+ * @param {String} baidu -百度统计key
+ * @param {String} delClass-要删除的class
+ */
+
 //配置域名和需要显示的板块  
 var config=[
   {
-    "host":"jingjingmall.cn",
-    "logo":"星微科技",
+    "host":"jingjingmall.cn", // 星微
     "gov":"粤ICP备18044292号",
-    "company": "广州星微网络科技有限公司",
-    "name": "星微",
-    "baidu": "9df49540020d98c5885ac7a92105929b",
-    "delClass": ".block--del"
+    "baidu": "438193ad5585d4d6ab586ce6ed738f5e",
+    "delClass": ".del--login,.del--message",
+    "addClass": ".xingwei"
   },
   {
-    "host":"fxscrm.com",
-    "logo":"帆星科技",
+    "host":"fxscrm.com", // 帆星
     "gov":"粤ICP备18114627号",
-    "company": "广州帆星科技有限公司",
-    "name": "帆星",
-    "delClass": ".block--del"
+    "baidu": "2f4be2619429f659c02a9845b281681b",
+    "delClass": ".del--login,.del--message",
+    "addClass": ".fanxing"
   },
   {
-    "host":"tianleiscrm.com",
-    "logo":"田蕾科技",
+    "host":"tianleiscrm.com", // 田蕾
     "gov":"粤ICP备18116819号",
-    "company": "广州田蕾信息科技有限公司",
-    "name": "田蕾",
-    "delClass": ".block--del"
+    "baidu": "e47636fe2162fc585ea988bc6027000b",
+    "delClass": ".del--login,.del--message",
+    "addClass": ".tianlei"
   },
   {
     "host":"168feitao.com",  // 168非淘网
-    "gov":"粤ICP备18044292号-10"
+    "gov":"粤ICP备18044292号-10",
+    "addClass": ".xingwei"
   },
   {
     "host":"wechatgj.com", // 微客淘网
-    "gov":"粤ICP备18044292号-12"
+    "gov":"粤ICP备18044292号-12",
+    "addClass": ".xingwei"
   },
   {
     "host":"168duoshou.com", // 168舵手网
-    "gov":"粤ICP备18044292号-9"
+    "gov":"粤ICP备18044292号-9",
+    "addClass": ".xingwei"
   },
   {
     "host":"huanghuangmall.cn", // 欢豆商城网
-    "gov":"粤ICP备18044292号-11"
+    "gov":"粤ICP备18044292号-11",
+    "addClass": ".xingwei"
   },
   {
-    "logo":"田蕾科技", // 海朗网
-    "company": "广州田蕾信息科技有限公司",
-    "name": "田蕾",
-    "host":"hailangmall.cn",
-    "gov":"粤ICP备18116819号-3"
+    "host":"hailangmall.cn", // 海朗网
+    "gov":"粤ICP备18116819号-3",
+    "addClass": ".tianlei"
   },
   {
-    "logo":"田蕾科技", // 豆豆网
-    "company": "广州田蕾信息科技有限公司",
-    "name": "田蕾",
-    "host":"doudoumall.cn",
-    "gov":"粤ICP备18116819号-2"
+    "host":"doudoumall.cn", // 豆豆网
+    "gov":"粤ICP备18116819号-2",
+    "addClass": ".tianlei"
   },
   {
-    "logo":"田蕾科技", // 友客网
-    "company": "广州田蕾信息科技有限公司",
-    "name": "田蕾",
-    "host":"youkemall.cn",
-    "gov":"粤ICP备18116819号-4"
+    "host":"youkemall.cn", // 友客网
+    "gov":"粤ICP备18116819号-4",
+    "addClass": ".tianlei"
   },
   {
-    "logo":"田蕾科技", // 嗨淘网
-    "company": "广州田蕾信息科技有限公司",
-    "name": "田蕾",
-    "host":"haitaimall.cn",
-    "gov":"粤ICP备18116819号-5"
+    "host":"haitaimall.cn", // 嗨淘网
+    "gov":"粤ICP备18116819号-5",
+    "addClass": ".tianlei"
   },
 ];
+
+//跳转手机端
+var gotoMobile = function () {
+  var userAgentInfo = navigator.userAgent;
+  var Agents = ["Android", "iPhone", "SymbianOS", "Windows Phone"];
+  for (var v = 0; v < Agents.length; v++) {
+      if (userAgentInfo.indexOf(Agents[v]) > 0) {
+          window.location = "/Mobile/offline/index.html";
+          break;
+      }
+  }
+}
 
 //百度统计
 var statistics = function (key) {
@@ -99,23 +111,19 @@ var statistics = function (key) {
 
 for(var i=0;i<config.length;i++){
   if(window.location.host.indexOf(config[i].host) > -1){
-    if(!!config[i].logo){
-      $("#logo").html(config[i].logo);
-    };
+    gotoMobile();
+    
     if(!!config[i].gov){
       $("#gov").html(config[i].gov);
     };
-    if (!!config[i].company){
-      $("#company").html(config[i].company);
-    }
-    if (!!config[i].name){
-      $("#name").html(config[i].name);
-    }
     if (!!config[i].baidu){
       statistics(config[i].baidu);
     }
     if (!!config[i].delClass){
       $(config[i].delClass).remove();
+    }
+    if (!!config[i].addClass){
+      $(config[i].addClass).show();
     }
   };
 };
