@@ -85,6 +85,26 @@ var config=[
     "gov":"粤ICP备18116819号-5",
     "addClass": ".tianlei"
   },
+  {
+    "host":"wenwenmall.cn", // 文静网
+    "gov":"粤ICP备18114627号-5",
+    "addClass": ".fanxing"
+  },
+  {
+    "host":"kukemall.cn", // 快客网
+    "gov":"粤ICP备18114627号-4",
+    "addClass": ".fanxing"
+  },
+  {
+    "host":"douwanmall.cn", // 豆酷网
+    "gov":"粤ICP备18114627号-2",
+    "addClass": ".fanxing"
+  },
+  {
+    "host":"kuaidoumall.cn", // 快斗网
+    "gov":"粤ICP备18114627号-3",
+    "addClass": ".fanxing"
+  },
 ];
 
 //跳转手机端
