@@ -28,21 +28,21 @@ var config=[
     "host":"jingjingmall.cn", // 星微
     "gov":"粤ICP备18044292号",
     "baidu": "438193ad5585d4d6ab586ce6ed738f5e",
-    "delClass": ".del--login,.del--message",
+    "delClass": ".del--login",
     "addClass": ".xingwei"
   },
   {
     "host":"fxscrm.com", // 帆星
     "gov":"粤ICP备18114627号",
     "baidu": "2f4be2619429f659c02a9845b281681b",
-    "delClass": ".del--login,.del--message",
+    "delClass": ".del--login",
     "addClass": ".fanxing"
   },
   {
     "host":"tianleiscrm.com", // 田蕾
     "gov":"粤ICP备18116819号",
     "baidu": "e47636fe2162fc585ea988bc6027000b",
-    "delClass": ".del--login,.del--message",
+    "delClass": ".del--login",
     "addClass": ".tianlei"
   },
   {
@@ -104,8 +104,93 @@ var config=[
     "host":"kuaidoumall.cn", // 快斗网
     "gov":"粤ICP备18114627号-3",
     "addClass": ".fanxing"
-  },
+  }
 ];
+
+var uatConfig = [
+  {
+    "host":"ex-jjm.uat.aiagain.com", // 星微
+    "gov":"粤ICP备18044292号",
+    "addClass": ".xingwei",
+    "baidu": "438193ad5585d4d6ab586ce6ed738f5e",
+    "delClass": ".del--login"
+  },
+  {
+    "host":"fxscrm.uat.aiagain.com", // 帆星
+    "gov":"粤ICP备18114627号",
+    "baidu": "2f4be2619429f659c02a9845b281681b",
+    "addClass": ".fanxing",
+    "delClass": ".del--login"
+  },
+  {
+    "host":"tianleiscrm.uat.aiagain.com", // 田蕾
+    "gov":"粤ICP备18116819号",
+    "baidu": "e47636fe2162fc585ea988bc6027000b",
+    "addClass": ".tianlei",
+    "delClass": ".del--login"
+  },
+  {
+    "host":"ex-168feitao.uat.aiagain.com",  // 168非淘网
+    "gov":"粤ICP备18044292号-10",
+    "addClass": ".xingwei"
+  },
+  {
+    "host":"ex-wechatgj.uat.aiagain.com", // 微客淘网
+    "gov":"粤ICP备18044292号-12",
+    "addClass": ".xingwei"
+  },
+  {
+    "host":"ex-168duoshou.uat.aiagain.com", // 168舵手网
+    "gov":"粤ICP备18044292号-9",
+    "addClass": ".xingwei"
+  },
+  {
+    "host":"ex-huanghuangmall.uat.aiagain.com", // 欢豆商城网
+    "gov":"粤ICP备18044292号-11",
+    "addClass": ".xingwei"
+  },
+  {
+    "host":"ex-hailangmall.uat.aiagain.com", // 海朗网
+    "gov":"粤ICP备18116819号-3",
+    "addClass": ".tianlei"
+  },
+  {
+    "host":"ex-doudoumall.uat.aiagain.com", // 豆豆网
+    "gov":"粤ICP备18116819号-2",
+    "addClass": ".tianlei"
+  },
+  {
+    "host":"ex-youkemall.uat.aiagain.com", // 友客网
+    "gov":"粤ICP备18116819号-4",
+    "addClass": ".tianlei"
+  },
+  {
+    "host":"ex-haitaimall.uat.aiagain.com", // 嗨淘网
+    "gov":"粤ICP备18116819号-5",
+    "addClass": ".tianlei"
+  },
+  {
+    "host":"ex-wenwenmall.uat.aiagain.com", // 文静网
+    "gov":"粤ICP备18114627号-5",
+    "addClass": ".fanxing"
+  },
+  {
+    "host":"ex-kukemall.uat.aiagain.com", // 快客网
+    "gov":"粤ICP备18114627号-4",
+    "addClass": ".fanxing"
+  },
+  {
+    "host":"ex-douwanmall.uat.aiagain.com", // 豆酷网
+    "gov":"粤ICP备18114627号-2",
+    "addClass": ".fanxing"
+  },
+  {
+    "host":"ex-kuaidoumall.uat.aiagain.com", // 快斗网
+    "gov":"粤ICP备18114627号-3",
+    "addClass": ".fanxing"
+  }
+];
+config = config.concat(uatConfig);
 
 //跳转手机端
 var gotoMobile = function () {
