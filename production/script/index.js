@@ -104,7 +104,27 @@ var config=[
     "host":"kuaidoumall.cn", // 快斗网
     "gov":"粤ICP备18114627号-3",
     "addClass": ".fanxing"
-  }
+  },
+  {
+    "host":"fengfengmall.cn", // 枫峰网
+    "gov":"粤ICP备18044292号-13",
+    "addClass": ".xingwei"
+  },
+  {
+    "host":"shengshengmall.cn", // 声乐网
+    "gov":"粤ICP备18044292号-15",
+    "addClass": ".xingwei"
+  },
+  {
+    "host":"zhengzhengmall.cn", // 筝锋网
+    "gov":"粤ICP备18044292号-16",
+    "addClass": ".xingwei"
+  },
+  {
+    "host":"minminmall.cn", // 铭铭网
+    "gov":"粤ICP备18044292号-14",
+    "addClass": ".xingwei"
+  },
 ];
 
 var uatConfig = [
