@@ -208,7 +208,27 @@ var uatConfig = [
     "host":"ex-kuaidoumall.uat.aiagain.com", // 快斗网
     "gov":"粤ICP备18114627号-3",
     "addClass": ".fanxing"
-  }
+  },
+  {
+    "host":"ex-fengfengmall.uat.aiagain.com", // 枫峰网
+    "gov":"粤ICP备18044292号-13",
+    "addClass": ".xingwei"
+  },
+  {
+    "host":"ex-shengshengmall.uat.aiagain.com", // 声乐网
+    "gov":"粤ICP备18044292号-15",
+    "addClass": ".xingwei"
+  },
+  {
+    "host":"ex-zhengzhengmall.uat.aiagain.com", // 筝锋网
+    "gov":"粤ICP备18044292号-16",
+    "addClass": ".xingwei"
+  },
+  {
+    "host":"ex-minminmall.uat.aiagain.com", // 铭铭网
+    "gov":"粤ICP备18044292号-14",
+    "addClass": ".xingwei"
+  },
 ];
 config = config.concat(uatConfig);
 
