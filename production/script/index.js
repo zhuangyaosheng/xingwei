@@ -125,6 +125,26 @@ var config=[
     "gov":"粤ICP备18044292号-14",
     "addClass": ".xingwei"
   },
+  {
+    "host":"zhangzhangmall.cn", // 掌掌网
+    "gov":"粤ICP备18114627号-8",
+    "addClass": ".xingwei"
+  },
+  {
+    "host":"guaishoumall.cn", // 怪石网
+    "gov":"粤ICP备18114627号-6",
+    "addClass": ".xingwei"
+  },
+  {
+    "host":"kaizhangmall.cn", // 楷范网
+    "gov":"粤ICP备18114627号-7",
+    "addClass": ".xingwei"
+  },
+  {
+    "host":"huachengmall.cn", // 桦烟网
+    "gov":"粤ICP备18114627号-9",
+    "addClass": ".xingwei"
+  },
 ];
 
 var uatConfig = [
@@ -227,6 +247,26 @@ var uatConfig = [
   {
     "host":"ex-minminmall.uat.aiagain.com", // 铭铭网
     "gov":"粤ICP备18044292号-14",
+    "addClass": ".xingwei"
+  },
+  {
+    "host":"ex-zhangzhangmall.uat.aiagain.com", // 掌掌网
+    "gov":"粤ICP备18114627号-8",
+    "addClass": ".xingwei"
+  },
+  {
+    "host":"ex-guaishoumall.uat.aiagain.com", // 怪石网
+    "gov":"粤ICP备18114627号-6",
+    "addClass": ".xingwei"
+  },
+  {
+    "host":"ex-kaizhangmall.uat.aiagain.com", // 楷范网
+    "gov":"粤ICP备18114627号-7",
+    "addClass": ".xingwei"
+  },
+  {
+    "host":"ex-huachengmall.uat.aiagain.com", // 桦烟网
+    "gov":"粤ICP备18114627号-9",
     "addClass": ".xingwei"
   },
 ];
