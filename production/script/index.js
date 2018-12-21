@@ -17,7 +17,7 @@ var ArrayIndexOf =function(arr,value){
 /**
  * @param {String} host -域名（必需）
  * @param {String} gov -备案号（必需）
- * @param {String} addClass -要添加的class（必需，xingwei、fanxing、tianlei）
+ * @param {String} addClass -要添加的class（必需，xingwei、fanxing、tianlei、wgj、wgj-xw、wgj-fx、wgj-tl）
  * @param {String} baidu -百度统计key
  * @param {String} delClass-要删除的class
  */
@@ -29,21 +29,21 @@ var config=[
     "gov":"粤ICP备18044292号",
     "baidu": "438193ad5585d4d6ab586ce6ed738f5e",
     "delClass": ".del--login",
-    "addClass": ".xingwei"
+    "addClass": ".wgj,.wgj-xw"
   },
   {
     "host":"fxscrm.com", // 帆星
     "gov":"粤ICP备18114627号",
     "baidu": "2f4be2619429f659c02a9845b281681b",
     "delClass": ".del--login",
-    "addClass": ".fanxing"
+    "addClass": ".wgj,.wgj-fx"
   },
   {
     "host":"tianleiscrm.com", // 田蕾
     "gov":"粤ICP备18116819号",
     "baidu": "e47636fe2162fc585ea988bc6027000b",
     "delClass": ".del--login",
-    "addClass": ".tianlei"
+    "addClass": ".wgj,.wgj-tl"
   },
   {
     "host":"168feitao.com",  // 168非淘网
@@ -128,22 +128,22 @@ var config=[
   {
     "host":"zhangzhangmall.cn", // 掌掌网
     "gov":"粤ICP备18114627号-8",
-    "addClass": ".xingwei"
+    "addClass": ".fanxing"
   },
   {
     "host":"guaishoumall.cn", // 怪石网
     "gov":"粤ICP备18114627号-6",
-    "addClass": ".xingwei"
+    "addClass": ".fanxing"
   },
   {
     "host":"kaizhangmall.cn", // 楷范网
     "gov":"粤ICP备18114627号-7",
-    "addClass": ".xingwei"
+    "addClass": ".fanxing"
   },
   {
     "host":"huachengmall.cn", // 桦烟网
     "gov":"粤ICP备18114627号-9",
-    "addClass": ".xingwei"
+    "addClass": ".fanxing"
   },
 ];
 
@@ -151,7 +151,7 @@ var uatConfig = [
   {
     "host":"ex-jjm.uat.aiagain.com", // 星微
     "gov":"粤ICP备18044292号",
-    "addClass": ".xingwei",
+    "addClass": ".wgj,.wgj-xw",
     "baidu": "438193ad5585d4d6ab586ce6ed738f5e",
     "delClass": ".del--login"
   },
@@ -159,14 +159,14 @@ var uatConfig = [
     "host":"fxscrm.uat.aiagain.com", // 帆星
     "gov":"粤ICP备18114627号",
     "baidu": "2f4be2619429f659c02a9845b281681b",
-    "addClass": ".fanxing",
+    "addClass": ".wgj,.wgj-fx",
     "delClass": ".del--login"
   },
   {
     "host":"tianleiscrm.uat.aiagain.com", // 田蕾
     "gov":"粤ICP备18116819号",
     "baidu": "e47636fe2162fc585ea988bc6027000b",
-    "addClass": ".tianlei",
+    "addClass": ".wgj,.wgj-tl",
     "delClass": ".del--login"
   },
   {
@@ -252,22 +252,22 @@ var uatConfig = [
   {
     "host":"ex-zhangzhangmall.uat.aiagain.com", // 掌掌网
     "gov":"粤ICP备18114627号-8",
-    "addClass": ".xingwei"
+    "addClass": ".fanxing"
   },
   {
     "host":"ex-guaishoumall.uat.aiagain.com", // 怪石网
     "gov":"粤ICP备18114627号-6",
-    "addClass": ".xingwei"
+    "addClass": ".fanxing"
   },
   {
     "host":"ex-kaizhangmall.uat.aiagain.com", // 楷范网
     "gov":"粤ICP备18114627号-7",
-    "addClass": ".xingwei"
+    "addClass": ".fanxing"
   },
   {
     "host":"ex-huachengmall.uat.aiagain.com", // 桦烟网
     "gov":"粤ICP备18114627号-9",
-    "addClass": ".xingwei"
+    "addClass": ".fanxing"
   },
 ];
 config = config.concat(uatConfig);
